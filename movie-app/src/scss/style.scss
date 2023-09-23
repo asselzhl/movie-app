@@ -1,0 +1,49 @@
+@import 'reset.scss';
+
+
+
+
+.footer {
+  background-color: black;
+  padding: 8px 0px;
+&__container { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+.copyright {
+&__list { 
+      display: flex;
+      justify-content: space-between;
+  }
+&__item,
+  &__link { 
+      color: white;
+      transition: .5s;
+  }
+  &__item {
+      &:not(:last-child) {
+          margin-right: 15px;
+      }
+  }
+  &__link:hover {
+      color: #bdae82;
+      transition: .5s;
+  }
+}
+.rsschool { 
+      width: 135px;
+      height: 50px;
+      
+  &__logo {
+      transition: .5s;
+      img {
+          max-width: 100%;
+      }
+      &:hover {
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          transition: .5s;
+      }
+  }
+}
